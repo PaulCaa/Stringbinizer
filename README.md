@@ -1,6 +1,6 @@
 # StringBinizer
 
-Java library to encode strings in binary and decode.
+Java library that encode strings in binary and decode binary in strings.
 
 ## Implementation
 
@@ -19,7 +19,7 @@ Java library to encode strings in binary and decode.
     <dependency>
         <groupId>ar.com.pablocaamano</groupId>
         <artifactId>stringbinizer</artifactId>
-        <version>1.1</version>
+        <version>1.2</version>
     </dependency>
 ```
 
@@ -37,16 +37,16 @@ Java library to encode strings in binary and decode.
 
 **Encoding any String to binary**
 
-Invoke `Encoder` class and `encode()` method with String parameter. This method returns other String with the binary conversion. Example:
+Invoke `encode(param)` method with String parameter. This method returns other String with the binary conversion. Example:
 
 ```java
-    String binaryString = Encoder.encode("Hello world!");
+    String binaryString = Stringbinizer.encode("Hello world!");
 ```
 
 **Decoding binary to String**
 
-Invoke `Decoder` class and `decoder()` method with binary parameter contained in String format. This method returns other String with the original String. Example:
+Invoke `decoder(param)` method with binary parameter contained in String format. This method returns other String with the original String. Example:
 
 ```java
-    String originalString = Decoder.decode("100100010110001111000");
+    String originalString = Stringbinizer.decode("100100010110001111000");
 ```

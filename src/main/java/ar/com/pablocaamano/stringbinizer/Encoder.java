@@ -5,10 +5,11 @@ import java.io.Serializable;
 /**
  * Class to encode characters string based in dictionary definition
  * @author Caamaño, Pablo
+ * @website http://pablocaamano.com.ar
  */
 public class Encoder implements Serializable {
 
-    public static String encode(String s){
+    protected static String process(String s){
         String resultBin = "";
         for (int i=0; i<s.length(); i++){
             int a = s.charAt(i);

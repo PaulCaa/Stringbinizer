@@ -5,10 +5,11 @@ import java.io.Serializable;
 /**
  * Class to decode binary concatenation to string
  * @author Caamaño, Pablo
+ * @website http://pablocaamano.com.ar
  */
 public class Decoder implements Serializable {
 
-    public static String decode(String b){
+    protected static String process(String b){
         String[] binArray = b.split("");
         String binWord ="";
         String s = "";
@@ -30,4 +31,5 @@ public class Decoder implements Serializable {
         int charIndex = Integer.parseInt(bin,2);
         return (char)charIndex;
     }
+
 }
