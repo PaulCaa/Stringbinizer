@@ -45,7 +45,7 @@ Invoke `encode(param)` method with String parameter. This method returns other S
 
 **Decoding binary to String**
 
-Invoke `decoder(param)` method with binary parameter contained in String format. This method returns other String with the original String. Example:
+Invoke `decode(param)` method with binary parameter contained in String format. This method returns other String with the original String. Example:
 
 ```java
     String originalString = Stringbinizer.decode("100100010110001111000");
